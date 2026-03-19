@@ -917,9 +917,27 @@ def gemini_ask(model,prompt):
 # ══════════════════════════════════════════════════════════════════
 # PAGE HEADER
 # ══════════════════════════════════════════════════════════════════
-st.markdown("""
+st.markdown(f"""
 <div style="display:flex;align-items:center;gap:14px;margin-bottom:4px;">
   <span style="font-size:36px;">📊</span>
+  <div>
+    <div style="font-family:'Syne',sans-serif;font-size:26px;font-weight:800;
+         background:linear-gradient(90deg,#FF6B35,#2EC4B6);
+         -webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+      Analytics Dashboard Ultra
+    </div>
+    <div style="color:{TEXT_SEC};font-size:13px;margin-top:2px;">
+      Connect · Explore · Statistical Analysis · Forecast · ML · Gemini AI
+      <span style="margin-left:12px;padding:2px 8px;border-radius:10px;
+        font-size:10px;font-weight:600;
+        background:{'rgba(255,107,53,0.15)' if is_dark else 'rgba(255,107,53,0.1)'};
+        color:#FF6B35;">
+        {'🌙 Dark' if is_dark else '☀️ Light'} Mode
+      </span>
+    </div>
+  </div>
+</div>
+""", unsafe_allow_html=True)
   <div>
     <div style="font-family:'Syne',sans-serif;font-size:26px;font-weight:800;
          background:linear-gradient(90deg,#FF6B35,#2EC4B6);
